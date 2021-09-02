@@ -1,1 +1,1 @@
-# afs-210-Algorithms
+# AFS-210-Algorithms
