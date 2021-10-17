@@ -1,16 +1,16 @@
-def counting_sort(list, max_val):
+def counting_sort(array, max_val):
     m = max_val + 1
     count = [0] * m                
     
-    for n in list:
+    for a in array:
     # count occurences
-        count[n] += 1             
+        count[a] += 1             
     i = 0
-    for n in range(m):            
-        for c in range(count[n]):  
-            list[i] = n
+    for a in range(m):            
+        for c in range(count[a]):  
+            array[i] = a
             i += 1
-    return list # returns sorted list
+    return array # returns sorted array
 
 print(counting_sort( [1, 2, 7, 3, 2, 1, 4, 2, 3, 2, 1], 7 ))
 
